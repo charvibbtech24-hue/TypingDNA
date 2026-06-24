@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypingDNA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">TD</div>
+        <div>
+          <h1>TypingDNA</h1>
+          <p class="eyebrow">Behavioral biometric authentication</p>
+        </div>
+      </div>
+      <div class="security-status">Secure analysis active</div>
+    </header>
+
+    <div class="dashboard-grid">
+      <section class="card input-card">
+        <div class="card-head">
+          <div>
+            <p class="section-kicker">Live capture</p>
+            <h2>Typing Input</h2>
+          </div>
+          <p>Enter a sample to analyze its keystroke signature.</p>
+        </div>
+        <div class="input-action-row">
+          <input type="text" id="typing-input" aria-label="Type here" placeholder="Start typing to capture your biometric pattern…">
+          <button id="generate-profile">Generate Typing Profile</button>
+        </div>
+      </section>
+
+      <section class="card data-card">
+        <div class="card-head"><div><p class="section-kicker">Raw telemetry</p><h2>Keystroke Data</h2></div></div>
+        <div class="log" id="keystroke-data"></div>
+      </section>
+
+      <section class="card pattern-card">
+        <div class="card-head"><div><p class="section-kicker">Behavioral signal</p><h2>Typing Pattern Analysis</h2></div></div>
+        <div class="log" id="digraph-data"></div>
+      </section>
+
+      <section class="card dwell-card">
+        <div class="card-head">
+          <div><p class="section-kicker">Key pressure</p><h2>Dwell Time Analysis</h2></div>
+          <p id="average-dwell">Average dwell: 0.000s</p>
+        </div>
+        <div class="log" id="dwell-data"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-head"><div><p class="section-kicker">Current session</p><h2>Typing Profile</h2></div></div>
+        <div id="typing-profile"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-head"><div><p class="section-kicker">Enrollment</p><h2>Save Typing Profile</h2></div></div>
+        <div class="profile-form">
+          <div><label for="name">Name</label><input type="text" id="name" placeholder="Profile name"></div>
+          <div><label for="saved-profiles">Saved Profiles</label><select id="saved-profiles"><option value="">Select a profile</option></select></div>
+          <button id="save-profile">Save Profile</button>
+        </div>
+        <p id="save-message"></p>
+        <div id="saved-profile-details"></div>
+      </section>
+
+      <section class="card comparison-card">
+        <div class="card-head">
+          <div><p class="section-kicker">Authentication result</p><h2>Profile Comparison</h2></div>
+          <p>Compare this session with the selected enrolled profile.</p>
+        </div>
+        <button id="compare-profile">Compare With Saved Profile</button>
+        <div id="profile-comparison"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
