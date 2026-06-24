@@ -1,4 +1,6 @@
-# TypingDNA
+# TypingDNA 🧬⌨️
+
+### Behavioral Biometric Authentication Using Keystroke Dynamics
 
 A behavioral biometric authentication system that identifies users based on **how they type**, rather than what they type.
 
@@ -89,7 +91,33 @@ TypingDNA/
 ├── index.html
 ├── styles.css
 ├── script.js
+├── README.md
+└── screenshots/
+    ├── 1.png
+    ├── 2.png
+    ├── 3.png
+    └── 4.png
 ```
+
+---
+
+## Screenshots
+
+### Main Dashboard
+
+![Main Dashboard](screenshots/1.png)
+
+### Typing Pattern Analysis
+
+![Typing Pattern Analysis](screenshots/2.png)
+
+### Profile Comparison
+
+![Profile Comparison](screenshots/3.png)
+
+### Saved Profiles
+
+![Saved Profiles](screenshots/4.png)
 
 ---
 
@@ -105,14 +133,8 @@ TypingDNA/
 
 ---
 
-## Screenshots
-
-(Add screenshots here)
-
----
-
 ## Author
 
-Charvi B
+**Charvi B**
 
 Built as an exploration of behavioral biometrics and keystroke dynamics authentication.
